@@ -1,0 +1,127 @@
+<div class="product-item wow fadeInUp" data-catalogid="[catalogid]" data-ajaxcart="1" data-addcart-callback="addcart_callback" data-categoryid="[cat_id]">
+    
+
+	<div class="img">
+        <a href="product.asp?itemid=[catalogid]">
+            <img src="[THUMBNAIL]" alt="[imagecaption1]" class="img-responsive" />
+        </a>
+		<!--START: toSellerTag-->
+			<span id="topSellerDiv1_[topSellerSufix]" class="top-seller-badge top-seller-badge2" style="background-color: [topSellerBackGround]; color: [topSellerFontGround];">
+				Top Seller
+			</span> 
+		<!--END: toSellerTag-->
+		
+		<div class="action action-btns hidden-xs hidden-sm hidden-md">
+			<!--START: addtocart-->
+			<a href="add_cart.asp?quick=1&amp;item_id=[catalogid]&amp;cat_id=[cat_id]" class="add-to-cart btn btn-default">
+                <span class="buyitlink-text">[category_buyitlink]</span>
+                <span class="buyitlink-text ajaxcart-loader">[category_buyitlink]</span>
+                <span class="buyitlink-text ajaxcart-added">[category_buyitlink]</span>
+            </a>
+			<!--END: addtocart-->
+			<div class="reviews">
+                <!--START: product_review-->
+                <!--START: product_review_average-->
+                <span class="reviews-stars rating-[review_average]"></span> <span class="reviews-count">([review_count])</span>
+                <!--END: product_review_average-->
+                <!--END: product_review-->
+            </div>
+			<!--START: quickview-->
+			<button class="quickview" data-toggle="modal" aria-hidden="true">[product_quick-view]</button>
+			<!--END: quickview-->
+		</div>
+    </div>
+	<div class="product-desc">
+		<div class="name">
+			<a href="product.asp?itemid=[catalogid]">[name]</a>
+		</div>
+		
+		<div class="reviews hidden-lg">
+            <!--START: product_review-->
+            <!--START: product_review_average-->
+            <span class="reviews-stars rating-[review_average]"></span> <span class="reviews-count">([review_count])</span>
+            <!--END: product_review_average-->
+            <!--END: product_review-->
+        </div>
+		
+		<div class="desc">[description]</div>
+		
+		<div class="price">
+			<!--START: ITEMPRICE-->
+			<span class="regular-price">[ITEMPRICE]</span>
+			<!--END: ITEMPRICE-->
+			<!--START: SALEPRICE-->
+			<del class="regular-price">[ITEMPRICE] <span class="sr-only">Original price</span></del>
+			<span class="sale-price">[ITEMSALEPRICE]</span>
+			<span class="on-sale-badge">[product_sale]</span>
+			<!--END: SALEPRICE-->
+		</div>
+
+		<div class="status">
+			<!--START: product_availability-->
+			<span class="availability">[availability]</span>
+			<!--END: product_availability-->
+			<!--START: freeshippingblock-->
+			<span class="freeshipping">[freeshipping]</span>
+			<!--END: freeshippingblock-->
+		</div>
+
+		
+
+		<!--START: addtowishlist-->
+		<div class="addtowishlist hide">
+			<a href="#" class="btn btn-link addtowishlist-item" role="button"><i class="icon-heart" role="presentation"></i> [product_addtowishlist]</a>
+		</div>
+		<!--END: addtowishlist-->
+
+			
+
+		<!--START: previouslybought-->
+		<div id="divPrevMessage_[catalogid]" style="display: none; margin-bottom:15px;">
+			<em>You previously purchased this item on&nbsp;<span id="spnPrevPurchDate_[catalogid]"></span></em>
+			<br /><a href="" id="lnkPrevPurchOrderTracking_[catalogid]">View this order</a>
+		</div>
+		<script>
+			if ("[userid_enc]" != "") {				
+				setTimeout("checkPrevPurch('[userid_enc]','[catalogid]');", 500);
+			}
+		</script>
+		<!--END: previouslybought-->
+        
+		<div class="action hidden-lg">
+			<a href="add_cart.asp?quick=1&amp;item_id=[catalogid]&amp;cat_id=[cat_id]" class="add-to-cart btn btn-default">
+				<span class="buyitlink-text">[category_buyitlink]</span>
+				<span class="buyitlink-text ajaxcart-loader">[category_buyitlink]</span>
+				<span class="buyitlink-text ajaxcart-added">[category_buyitlink]</span>
+			</a>
+		</div>
+
+	</div>
+</div>
+
+<!--START: previouslybought_scripts-->
+<script>
+	function checkPrevPurch(userId, caId) {
+
+		jQuery.ajax({
+			url: 'ajaxPrevPurch.asp',
+			dataType: 'json',
+			type: 'get',
+			data: 'cu=' + userId + '&ca=' + caId,
+			cache: false,
+			success: function(strResult) {
+				if (strResult.trackinglink != '') {
+					jQuery("#lnkPrevPurchOrderTracking_" + String(caId)).attr("href", strResult.trackinglink);
+					jQuery("#divPrevMessage_" + String(caId)).css({ "display": "block" });
+					jQuery("#spnPrevPurchDate_" + String(caId)).html(strResult.purchaseDate);
+				}
+				else {
+					jQuery("#divPrevMessage_" +  String(caId)).css({ "display": "none" });
+				}
+			},
+			error: jQuery("#divPrevMessage_" + String(caId)).css({ "display": "none" })
+
+		});
+	}
+</script>
+<!--END: previouslybought_scripts-->
