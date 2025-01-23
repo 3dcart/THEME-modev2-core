@@ -1,0 +1,500 @@
+{
+  "theme_name": "Mode Core",
+  "selected_preset": 0,
+  "field_groups": [
+    {
+      "name": "General"
+    },
+    {
+      "name": "Text & Buttons"
+    },
+    {
+      "name": "Typography"
+    },
+    {
+      "name": "Products"
+    }
+  ],
+  "theme_presets": [
+    {
+      "isCustom": 0,
+      "name": "Default",
+      "fields": [
+        {
+          "label": "Theme primary color",
+          "name": "primary_color",
+          "type": 2,
+          "value": "dba48f",
+          "group": 0
+        },
+        {
+          "label": "Headings color",
+          "name": "headings_color",
+          "type": 2,
+          "value": "323232",
+          "group": 1
+        },
+        {
+          "label": "Body text color",
+          "name": "body_text_color",
+          "type": 2,
+          "value": "646464",
+          "group": 1
+        },
+        {
+          "label": "Primary button color",
+          "name": "btn_color",
+          "type": 2,
+          "value": "323232",
+          "group": 1
+        },
+        {
+          "label": "Primary button border",
+          "name": "btn_border",
+          "type": 2,
+          "value": "323232",
+          "group": 1
+        },
+        {
+          "label": "Primary button text color",
+          "name": "btn_text_color",
+          "type": 2,
+          "value": "FFFFFF",
+          "group": 1
+        },
+        {
+          "label": "Secondary button color",
+          "name": "btn2_color",
+          "type": 2,
+          "value": "dba48f",
+          "group": 1
+        },
+        {
+          "label": "Secondary button border",
+          "name": "btn2_border",
+          "type": 2,
+          "value": "dba48f",
+          "group": 1
+        },
+        {
+          "label": "Secondary button text color",
+          "name": "btn2_text_color",
+          "type": 2,
+          "value": "FFFFFF",
+          "group": 1
+        },
+        {
+          "label": "Base font size",
+          "name": "base_font_size",
+          "type": 3,
+          "value": "12",
+          "options": [
+          	{
+              "text": "12px",
+              "value": 12
+            },
+            {
+              "text": "13px",
+              "value": 13
+            },
+            {
+              "text": "14px",
+              "value": 14
+            },
+            {
+              "text": "15px",
+              "value": 15
+            },
+            {
+              "text": "16px",
+              "value": 16
+            },
+            {
+              "text": "17px",
+              "value": 17
+            },
+            {
+              "text": "18px",
+              "value": 18
+            }
+          ],
+          "group": 2
+        },
+        {
+          "label": "Sale text",
+          "name": "sale_text",
+          "type": 2,
+          "value": "e95144",
+          "group": 3
+        },
+        {
+          "label": "Rating Stars color",
+          "name": "stars_color",
+          "type": 2,
+          "value": "000000",
+          "group": 3
+        }
+      ]
+    },
+    {
+      "isCustom": 0,
+      "name": "Deep Blues",
+      "fields": [
+        {
+          "label": "Theme primary color",
+          "name": "primary_color",
+          "type": 2,
+          "value": "0087BF",
+          "group": 0
+        },
+        {
+          "label": "Headings color",
+          "name": "headings_color",
+          "type": 2,
+          "value": "323232",
+          "group": 1
+        },
+        {
+          "label": "Body text color",
+          "name": "body_text_color",
+          "type": 2,
+          "value": "646464",
+          "group": 1
+        },
+        {
+          "label": "Primary button color",
+          "name": "btn_color",
+          "type": 2,
+          "value": "002433",
+          "group": 1
+        },
+        {
+          "label": "Primary button border",
+          "name": "btn_border",
+          "type": 2,
+          "value": "002433",
+          "group": 1
+        },
+        {
+          "label": "Primary button text color",
+          "name": "btn_text_color",
+          "type": 2,
+          "value": "FFFFFF",
+          "group": 1
+        },
+        {
+          "label": "Secondary button color",
+          "name": "btn2_color",
+          "type": 2,
+          "value": "0087BF",
+          "group": 1
+        },
+        {
+          "label": "Secondary button border",
+          "name": "btn2_border",
+          "type": 2,
+          "value": "0087BF",
+          "group": 1
+        },
+        {
+          "label": "Secondary button text color",
+          "name": "btn2_text_color",
+          "type": 2,
+          "value": "FFFFFF",
+          "group": 1
+        },
+        {
+          "label": "Base font size",
+          "name": "base_font_size",
+          "type": 3,
+          "value": "12",
+          "options": [
+          	{
+              "text": "12px",
+              "value": 12
+            },
+            {
+              "text": "13px",
+              "value": 13
+            },
+            {
+              "text": "14px",
+              "value": 14
+            },
+            {
+              "text": "15px",
+              "value": 15
+            },
+            {
+              "text": "16px",
+              "value": 16
+            },
+            {
+              "text": "17px",
+              "value": 17
+            },
+            {
+              "text": "18px",
+              "value": 18
+            }
+          ],
+          "group": 2
+        },
+        {
+          "label": "Sale text",
+          "name": "sale_text",
+          "type": 2,
+          "value": "e95144",
+          "group": 3
+        },
+        {
+          "label": "Rating Stars color",
+          "name": "stars_color",
+          "type": 2,
+          "value": "0087BF",
+          "group": 3
+        }
+      ]
+    },
+    {
+      "isCustom": 0,
+      "name": "Dark Green",
+      "fields": [
+        {
+          "label": "Theme primary color",
+          "name": "primary_color",
+          "type": 2,
+          "value": "085924",
+          "group": 0
+        },
+        {
+          "label": "Headings color",
+          "name": "headings_color",
+          "type": 2,
+          "value": "323232",
+          "group": 1
+        },
+        {
+          "label": "Body text color",
+          "name": "body_text_color",
+          "type": 2,
+          "value": "646464",
+          "group": 1
+        },
+        {
+          "label": "Primary button color",
+          "name": "btn_color",
+          "type": 2,
+          "value": "014017",
+          "group": 1
+        },
+        {
+          "label": "Primary button border",
+          "name": "btn_border",
+          "type": 2,
+          "value": "014017",
+          "group": 1
+        },
+        {
+          "label": "Primary button text color",
+          "name": "btn_text_color",
+          "type": 2,
+          "value": "FFFFFF",
+          "group": 1
+        },
+        {
+          "label": "Secondary button color",
+          "name": "btn2_color",
+          "type": 2,
+          "value": "085924",
+          "group": 1
+        },
+        {
+          "label": "Secondary button border",
+          "name": "btn2_border",
+          "type": 2,
+          "value": "085924",
+          "group": 1
+        },
+        {
+          "label": "Secondary button text color",
+          "name": "btn2_text_color",
+          "type": 2,
+          "value": "FFFFFF",
+          "group": 1
+        },
+        {
+          "label": "Base font size",
+          "name": "base_font_size",
+          "type": 3,
+          "value": "12",
+          "options": [
+          	{
+              "text": "12px",
+              "value": 12
+            },
+            {
+              "text": "13px",
+              "value": 13
+            },
+            {
+              "text": "14px",
+              "value": 14
+            },
+            {
+              "text": "15px",
+              "value": 15
+            },
+            {
+              "text": "16px",
+              "value": 16
+            },
+            {
+              "text": "17px",
+              "value": 17
+            },
+            {
+              "text": "18px",
+              "value": 18
+            }
+          ],
+          "group": 2
+        },
+        {
+          "label": "Sale text",
+          "name": "sale_text",
+          "type": 2,
+          "value": "e95144",
+          "group": 3
+        },
+        {
+          "label": "Rating Stars color",
+          "name": "stars_color",
+          "type": 2,
+          "value": "0087BF",
+          "group": 3
+        }
+      ]
+    },
+    {
+      "isCustom": 1,
+      "name": "Custom",
+      "fields": [
+        {
+          "label": "Theme primary color",
+          "name": "primary_color",
+          "type": 2,
+          "value": "dba48f",
+          "group": 0
+        },
+        {
+          "label": "Headings color",
+          "name": "headings_color",
+          "type": 2,
+          "value": "323232",
+          "group": 1
+        },
+        {
+          "label": "Body text color",
+          "name": "body_text_color",
+          "type": 2,
+          "value": "646464",
+          "group": 1
+        },
+        {
+          "label": "Primary button color",
+          "name": "btn_color",
+          "type": 2,
+          "value": "323232",
+          "group": 1
+        },
+        {
+          "label": "Primary button border",
+          "name": "btn_border",
+          "type": 2,
+          "value": "323232",
+          "group": 1
+        },
+        {
+          "label": "Primary button text color",
+          "name": "btn_text_color",
+          "type": 2,
+          "value": "FFFFFF",
+          "group": 1
+        },
+        {
+          "label": "Secondary button color",
+          "name": "btn2_color",
+          "type": 2,
+          "value": "dba48f",
+          "group": 1
+        },
+        {
+          "label": "Secondary button border",
+          "name": "btn2_border",
+          "type": 2,
+          "value": "dba48f",
+          "group": 1
+        },
+        {
+          "label": "Secondary button text color",
+          "name": "btn2_text_color",
+          "type": 2,
+          "value": "FFFFFF",
+          "group": 1
+        },
+        {
+          "label": "Base font size",
+          "name": "base_font_size",
+          "type": 3,
+          "value": "12",
+          "options": [
+          	{
+              "text": "12px",
+              "value": 12
+            },
+            {
+              "text": "13px",
+              "value": 13
+            },
+            {
+              "text": "14px",
+              "value": 14
+            },
+            {
+              "text": "15px",
+              "value": 15
+            },
+            {
+              "text": "16px",
+              "value": 16
+            },
+            {
+              "text": "17px",
+              "value": 17
+            },
+            {
+              "text": "18px",
+              "value": 18
+            }
+          ],
+          "group": 2
+        },
+        {
+          "label": "Sale text",
+          "name": "sale_text",
+          "type": 2,
+          "value": "e95144",
+          "group": 3
+        },
+        {
+          "label": "Rating Stars color",
+          "name": "stars_color",
+          "type": 2,
+          "value": "000000",
+          "group": 3
+        }
+      ]
+    }
+  ]
+}
